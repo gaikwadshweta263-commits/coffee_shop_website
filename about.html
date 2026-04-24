@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>About Sipology</title>
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css">
+  <style>
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      margin: 0;
+      background: #fefaf3;
+    }
+
+    .navbar {
+      background-color: #3e2c1c;
+    }
+    .navbar .navbar-brand, .navbar-nav .nav-link {
+      color: white !important; font-weight: bold;
+    }
+    .navbar .nav-link:hover { color: #d2b48c !important; }
+
+    .hero-small {
+      background: url('images/images.jpeg') no-repeat center center/cover;
+      padding: 120px 0 80px;
+      text-align: center;
+      color: white;
+      text-shadow: 2px 2px 6px #000;
+    }
+    .hero-small h1 { font-size: 2.5rem; margin-bottom: 10px; }
+    .hero-small p  { font-size: 1.1rem; }
+
+    .about-section {
+      padding: 60px 20px;
+      background: #fffaf3;
+    }
+    .about-title {
+      font-size: 2.5rem; color: #5a3825; text-align: center; margin-bottom: 40px;
+    }
+    .about-text {
+      max-width: 800px; margin: 0 auto 40px;
+      color: #4b2e23; font-size: 1.1rem; line-height: 1.8;
+      text-align: center;
+    }
+
+    .cards-layout {
+      display: flex; flex-wrap: wrap;
+      gap: 30px; justify-content: center;
+    }
+    .about-card {
+      background: rgba(255, 243, 233, 0.95);
+      border-radius: 20px;
+      padding: 30px;
+      width: 260px;
+      text-align: center;
+      box-shadow: 0 6px 18px rgba(0,0,0,0.2);
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+    .about-card:hover {
+      transform: translateY(-10px);
+      box-shadow: 0 10px 25px rgba(0,0,0,0.3);
+    }
+    .about-card i {
+      font-size: 42px; margin-bottom: 15px; color: #6f4e37;
+    }
+    .about-card h5 {
+      font-weight: bold;
+      margin-bottom: 12px;
+    }
+
+    .btn-primary { background: #6f4e37; border: none; }
+    .btn-primary:hover { background: #5a3c28; }
+
+    @media(max-width:768px){
+      .about-card { width: 100%; }
+      .hero-small h1 { font-size: 2rem; }
+      .hero-small p  { font-size: 1rem; }
+    }
+  </style>
+</head>
+<body>
+
+<nav class="navbar navbar-expand-lg sticky-top">
+  <div class="container-fluid">
+    <a class="navbar-brand" href="home.html">
+      <img src="https://img.icons8.com/ios-filled/50/ffffff/coffee.png" alt="Sipology Logo" style="height: 32px; margin-right: 10px;" />
+      Sipology
+    </a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#nav">
+      <span class="navbar-toggler-icon bg-light"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="nav">
+      <ul class="navbar-nav ms-auto">
+        <li class="nav-item"><a class="nav-link" href="home.html">Home</a></li>
+        <li class="nav-item"><a class="nav-link active" href="about.html">About</a></li>
+        <li class="nav-item"><a class="nav-link" href="services.html">Services</a></li>
+        <li class="nav-item"><a class="nav-link" href="menu.html">Menu</a></li>
+        <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<section class="hero-small">
+  <h1>Discover Our Story</h1>
+  <p>From single-origin beans to community connection — Sipology’s journey captured in flavor and aroma.</p>
+</section>
+
+<section class="about-section">
+  <div class="container">
+    <div class="about-text">
+      At Sipology, every sip is a celebration of craft, community, and comfort. Founded in 2010, we’ve made it our mission to brew joy daily—using premium beans, local partnerships, and a space where everyone belongs.
+    </div>
+
+    <h2 class="about-title">What Makes Us Unique</h2>
+    <div class="cards-layout">
+      <div class="about-card">
+        <i class="fas fa-user-tie"></i>
+        <h5>Craft Baristas</h5>
+        <p>Each drink is artfully prepared by skilled baristas who care about every detail.</p>
+      </div>
+      <div class="about-card">
+        <i class="fas fa-seedling"></i>
+        <h5>Eco-Friendly</h5>
+        <p>Sustainable packaging and ethical sourcing are part of our commitment to the planet.</p>
+      </div>
+      <div class="about-card">
+        <i class="fas fa-handshake"></i>
+        <h5>Local Sourcing</h5>
+        <p>We partner with local mills and farmers to ensure fresh and traceable ingredients.</p>
+      </div>
+      <div class="about-card">
+        <i class="fas fa-home"></i>
+        <h5>Community Space</h5>
+        <p>More than coffee: a meeting ground for conversations, creativity, and connection.</p>
+      </div>
+    </div>
+
+    <div class="text-center mt-5">
+      <a href="services.html" class="btn btn-primary px-4 py-2">Explore Our Services</a>
+    </div>
+  </div>
+</section>
+
+<script src="https://kit.fontawesome.com/4dfcd810f9.js" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
